@@ -1,0 +1,132 @@
+/*! ------------------------------------------------
+   Project Name: Mixio Coming Soon Template
+   Project Description: Mixio - awesome coming soon template to kick-start your project
+   Tags: mixio, coming soon, under construction, template, coming soon page, html5, css3
+   Version: 1.0.0
+   Build Date: July 2018
+   Last Update: July 2018
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: http://mixdesign.club
+   File name: first-screen.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Reset CSS
+    2. Base CSS Styles
+    3. Fullpage.js Plugin Styles
+    3. Buttons and Controls
+    4. Main Section Styles
+    5. Main Section Typography Styles
+    6. Content Sections Minimal Styles
+    7. Popup Forms Minimal Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+/* ------------------------------------------------*/
+/* Reset CSS Start
+/* ------------------------------------------------*/
+@import "partials/reset"
+/* ------------------------------------------------*/
+/* Reset CSS End
+/* ------------------------------------------------*/
+
+// Import Mixins and Variables
+@import "partials/layout"
+@import "partials/mixins"
+@import "partials/variables"
+
+/* ------------------------------------------------*/
+/* Base Styles Start
+/* ------------------------------------------------*/
+@import "modules/base"
+/* ------------------------------------------------*/
+/* Base Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* FullPage.js Plugin Styles Start
+/* ------------------------------------------------*/
+@import "../bower_components/fullpage.js/dist/jquery.fullpage"
+@import "modules/block-fullpage"
+/* ------------------------------------------------*/
+/* FullPage.js Plugin Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Buttons & Triggers Styles Start
+/* ------------------------------------------------*/
+@import "modules/elements-buttons"
+/* ------------------------------------------------*/
+/* Buttons & Triggers Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Main Section Styles Start
+/* ------------------------------------------------*/
+@import "modules/section-main"
+@import "modules/block-menu"
+@import "modules/block-countdown"
+@import "modules/block-socials"
+/* ------------------------------------------------*/
+/* Main Section Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Main Section Typography Styles Start
+/* ------------------------------------------------*/
+.light-text
+  color: $txt-white
+
+h1
+  font: normal 700 5rem/1.1 $caption-font
+  color: #222222
+  margin: 3rem 0 4rem 0
+  &.title-bottom
+    font: normal 700 5rem/1.1 $caption-font
+
+  +MQ(M)
+    font-size: 7rem
+    &.title-bottom
+      font-size: 7rem
+
+  +MQ(XL)
+    &.title-bottom
+      font-size: 9rem
+
+  +MQ(XXL)
+    font-size: 9rem
+    &.title-bottom
+      font-size: 11rem
+
+.headline
+  p
+    font-size: 1.6rem
+    max-width: 480px
+    margin: 0 0 2.6rem 0
+    +MQ(XL)
+      font-size: 1.8rem
+    +MQ(XXL)
+      max-width: 500px
+/* ------------------------------------------------*/
+/* Main Section Typography Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Popup Forms Minimal Styles Start
+/* ------------------------------------------------*/
+.popup
+  +position(fixed, 0 0 null null)
+  width: 100%
+  height: 100%
+  visibility: hidden
+  opacity: 0
+/* ------------------------------------------------*/
+/* Popup Forms Minimal Styles End
+/* ------------------------------------------------*/

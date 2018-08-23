@@ -1,0 +1,104 @@
+// ------------------------------------------------
+// Countdown Styles Start
+// ------------------------------------------------
+
+.countdown
+  position: absolute
+  left: 0
+  +center(y)
+  width: 100%
+  opacity: 0
+  transition: opacity 1s ease-in-out
+  z-index: 1
+  text-align: center
+
+  #countdown
+    position: relative
+    font-family: $default-font
+    font-size: 6rem
+    font-weight: 700
+    line-height: .8
+    color: $txt-white
+
+  .help-text
+    display: block
+    font-size: 1.4rem
+    font-weight: 400
+    line-height: 1.2
+    color: $txt-white
+    margin-top: .8rem
+    text-transform: uppercase
+    letter-spacing: .2em
+
+  &.countdown-full
+
+    #countdown-large
+      font: normal 700 4rem/1.1 $caption-font
+      letter-spacing: normal
+      color: $txt-white
+
+    .countdown-section
+      display: inline-block
+      margin-right: 3.2rem
+      &:last-of-type
+        margin-right: 0
+
+    .countdown-period
+      display: block
+      font: normal 400 1.2rem/1.7 $default-font
+      letter-spacing: normal
+
+    .help-text
+      margin: 0 0 2.4rem 0
+
+  &.countdown-days
+    position: absolute
+    bottom: auto
+    right: auto
+    left: 0
+    +center(y)
+    width: 100%
+    text-align: center
+
+    #countdown
+      font: normal 700 8rem/.8 $caption-font
+      letter-spacing: 0.075em
+
+    .countdown-period
+      display: none
+
+    .help-text
+      text-transform: uppercase
+      letter-spacing: .2em
+      margin: 1.6rem 0 0 0
+
+  +MQ(M)
+    &.countdown-days
+      #countdown
+        font-size: 10rem
+
+    &.countdown-full
+      .countdown-section
+        margin-right: 6rem
+      #countdown-large
+        font-size: 5.6rem
+      .countdown-period
+        font-size: 1.4rem
+
+  +MQ(XXL)
+    .help-text
+      font-size: 1.6rem
+    &.countdown-days
+      #countdown
+        font-size: 12rem
+    &.countdown-full
+      .countdown-section
+        margin-right: 8rem
+      #countdown-large
+        font-size: 7rem
+      .countdown-period
+        font-size: 1.6rem
+
+// ------------------------------------------------
+// Countdown Styles End
+// ------------------------------------------------

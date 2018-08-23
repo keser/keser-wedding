@@ -1,0 +1,81 @@
+// ------------------------------------------------
+// Socials Styles Start
+// ------------------------------------------------
+
+.socials
+  position: absolute
+  bottom: 3.2rem
+  width: 100%
+  padding: 0 3.2rem
+  +clearfix
+  opacity: 0
+  transition: all .3s ease-in-out
+
+  &.type-4
+    position: absolute
+    left: 0
+    bottom: 3.2rem
+
+  ul
+    display: block
+    position: relative
+    margin: 0
+    padding: 0
+    +clearfix
+    li
+      display: block
+      float: left
+      margin: 0 3rem 0 0
+      &:last-of-type
+        margin: 0
+
+      a
+        display: block
+        position: relative
+        width: 2.4rem
+        height: 2.4rem
+        line-height: 2.4rem
+        text-align: center
+        font-size: 1.6rem
+        color: #191919
+        transition: color .3s
+        &.light-text
+          color: $txt-white
+        i
+          font-size: 1.6rem
+
+      .no-touch &:hover
+        a
+          color: $txt-light
+
+  +MQ(M)
+    &.type-4
+      width: auto
+      position: absolute
+      left: auto
+      bottom: auto
+      right: 3.2rem
+      top: 3.2rem
+      padding: 0
+
+  +MQ(XL)
+    width: auto
+    padding: 0
+    +position(absolute, 3.2rem 3.2rem auto null)
+
+  +MQ(XXL)
+    +position(absolute, 4rem 4rem null null)
+
+.footer-content
+  .socials
+    text-align: center
+    ul
+      display: inline-block
+    +MQ(XL)
+      +position(relative, auto auto null null)
+
+    +MQ(XXL)
+      +position(relative, auto auto null null)
+// ------------------------------------------------
+// Socials Styles End
+// ------------------------------------------------

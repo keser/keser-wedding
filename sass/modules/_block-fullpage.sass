@@ -1,0 +1,56 @@
+// ------------------------------------------------
+// Fullpage.js Plugin Custom Styles Start
+// ------------------------------------------------
+
+#fp-nav ul li,
+.fp-slidesNav ul li
+  width: 20px
+  height: 20px
+  margin: 4px
+
+#fp-nav ul li a,
+.fp-slidesNav ul li a
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span
+  width: 8px
+  height: 8px
+  margin: -4px 0 0 -4px
+  background: rgba(#cacaca, .6)
+
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    +center
+    width: 20px
+    height: 20px
+    border: 1px solid #cacaca
+    border-radius: 50%
+    opacity: 0
+    transform: translateX(-50%) translateY(-50%) scale(0)
+    transition: all .3s ease-in-out
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span
+  background: #cacaca
+
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span
+  background: #cacaca
+  width: 10px
+  height: 10px
+  margin: -5px 0 0 -5px
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span
+  &::after
+    transform: translateX(-50%) translateY(-50%) scale(1)
+    opacity: 1
+
+// ------------------------------------------------
+// Fullpage.js Plugin Custom Styles End
+// ------------------------------------------------

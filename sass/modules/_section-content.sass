@@ -1,0 +1,135 @@
+// ------------------------------------------------
+// Content Sections Styles Start
+// ------------------------------------------------
+
+.content-section_media
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  +MQ(XL)
+    height: auto
+
+.image
+  height: 600px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  +MQ(M)
+    height: 760px
+  +MQ(XL)
+    height: 100%
+
+.content-section_info
+  position: relative
+  overflow: hidden
+
+.content-block,
+.blockquote-content
+  position: relative
+  width: 100%
+  height: auto
+  padding: 7.2rem 10%
+  +MQ(M)
+    padding: 8rem 10%
+    &.form-block
+      padding-left: calc(10% - 1.2rem)
+      padding-right: calc(10% - 1.2rem)
+      .section-title
+        padding: .8rem 1.2rem 0 1.2rem
+        .subtitle
+          left: calc(-10% + 1.2rem)
+  +MQ(XL)
+    position: absolute
+    left: 0
+    +center(y)
+    padding: 0 10rem
+    &.auto-height
+      position: relative
+      top: auto
+      left: auto
+      transform: translateX(0)
+      padding: 10rem
+    &.additional-block
+      padding: 10rem
+    &.form-block
+      .section-title
+        .subtitle
+          left: -5.6rem
+  +MQ(XXL)
+    padding: 0 14rem
+    &.auto-height
+      padding: 12rem 14rem
+    &.centered
+      padding: 12rem 14rem
+    &.form-block
+      padding-left: 12.8rem
+      padding-right: 12.8rem
+      .section-title
+        padding: .8rem 1.2rem 0 1.2rem
+        .subtitle
+          left: -8.8rem
+
+.blockquote-content
+  padding: 7.2rem 10%
+  +MQ(M)
+    padding: 8rem 10%
+    &.centered
+      padding: 8rem 10%
+  +MQ(XL)
+    padding: 0 10rem
+    &.centered
+      padding: 10rem
+  +MQ(XXL)
+    padding: 0 14rem
+    &.centered
+      padding: 12rem 14rem
+
+.section-title
+  position: relative
+  padding-top: .8rem
+  &.centered
+    text-align: center
+
+.additional-block
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+
+.additional-title
+  font: normal 700 2.8rem/1.2 $caption-font
+  color: #191919
+  margin: 0 0 2.4rem 0
+  +MQ(M)
+    font-size: 3.2rem
+  +MQ(XXL)
+    font-size: 4rem
+
+.additional-subtitle
+  margin: 0 0 1.4rem 0
+
+.footer-content
+  padding: 7.2rem 10%
+  .socials
+    position: relative
+    bottom: auto
+    padding: 0
+  +MQ(M)
+    padding: 8rem 10%
+    padding: 7.2rem 10%
+  +MQ(XXL)
+    padding: 10rem 0
+    padding: 7.2rem 0
+
+.copyright
+  text-align: center
+  font-size: 1.2rem
+  color: #858585
+  margin: .8rem auto 0
+
+  a
+    color: #858585
+    font-weight: 400
+
+// ------------------------------------------------
+// Content Sections Styles End
+// ------------------------------------------------
