@@ -147,8 +147,8 @@ $(function() {
   // --------------------------------------------- //
   // KBW-Countdown Start
   // --------------------------------------------- //
-  $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2018, 11, 22), format: 'D'});
-  $('#countdown-large').countdown({until: $.countdown.UTCDate(+10, 2018, 11, 22), format: 'DHMS'});
+  $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2018, 2, 16), format: 'D'});
+  $('#countdown-large').countdown({until: $.countdown.UTCDate(+0, 2019, 2, 16), format: 'DHMS'});
   // --------------------------------------------- //
   // KBW-Countdown End
   // --------------------------------------------- //
