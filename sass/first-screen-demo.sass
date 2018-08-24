@@ -1,0 +1,301 @@
+/*! ------------------------------------------------
+   Project Name: Mixio Coming Soon Template
+   Project Description: Mixio - awesome coming soon template to kick-start your project
+   Tags: mixio, coming soon, under construction, template, coming soon page, html5, css3
+   Version: 1.0.0
+   Build Date: July 2018
+   Last Update: July 2018
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: http://mixdesign.club
+   File name: first-screen-demo.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Base CSS Styles
+    2. Intro Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+// Import Mixins and Variables
+@import "partials/layout"
+@import "partials/mixins"
+@import "partials/variables"
+
+/* ------------------------------------------------*/
+/* Base Styles Start
+/* ------------------------------------------------*/
+*, *::before, *::after
+  box-sizing: border-box
+
+button:active, button:focus
+  outline: none !important
+
+button::-moz-focus-inner
+  border: 0 !important
+
+input::-moz-focus-inner
+  border: 0 !important
+
+::selection
+  background-color: #191919
+  color: $bsc-white
+  text-shadow: none
+
+html
+  font-family: sans-serif
+  font-size: 62.5%
+  +font-smoothing
+
+html,
+body
+  width: 100%
+  height: 100%
+
+body
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+  font-family: $default-font
+  font-weight: 400
+  font-size: 1.6rem
+  line-height: 1.7
+  background-color: shade($bsc-grey-dark, 40%)
+  color: $txt-medium
+
+a
+  text-decoration: none
+  color: $txt-medium
+
+img
+  display: block
+  width: 100%
+  height: auto
+
+h1
+  font-family: $caption-font
+  font-size: 3rem
+  font-weight: 700
+  color: #191919
+  letter-spacing: .3em
+  text-transform: uppercase
+  line-height: 1.2
+  margin: 0
+  padding: 0
+
+  small
+    display: block
+    text-transform: none
+    letter-spacing: normal
+    font-family: $default-font
+    font-weight: 400
+    font-size: 1.4rem
+    margin-top: 1rem
+    line-height: 1.7
+
+  +MQ(M)
+    font-size: 4.8rem
+    small
+      font-size: 1.8rem
+
+section
+  position: relative
+  width: 100%
+
+  &.intro
+    min-height: 480px
+    color: #fff
+    text-align: center
+
+.layer-black,
+.layer-black-04
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,.6)
+
+.layer-black-04
+  background-color: rgba(0,0,0,.4)
+/* ------------------------------------------------*/
+/* Base Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Intro Styles Start
+/* ------------------------------------------------*/
+.intro
+  background-color: #efefef
+  background-image: url('img/demo/bg-demo.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+header
+  position: relative
+  +clearfix
+  padding: 3.2rem 10% 0 10%
+  z-index: 1
+
+  .logo
+    img
+      width: 86px
+
+  .buttons
+    text-align: right
+    padding-top: .4rem
+
+  +MQ(M)
+    padding: 4.8rem 10% 0 10%
+
+  +MQ(XL)
+    padding: 48px 100px 0 100px
+    .logo
+      img
+        width: 106px
+
+  +MQ(XXL)
+    padding: 80px 140px 0 140px
+
+.intro__content
+  position: relative
+  .mixio-icon
+    width: 262px
+    padding-left: 3rem
+    height: 160px
+    margin: 0 auto 2.4rem
+
+  .headline
+    padding: 100px 10% 30px 10%
+  +MQ(M)
+    .mixio-icon
+      width: 262px
+    .headline
+      padding: 100px 10% 30px 10%
+  +MQ(XL)
+    .headline
+      padding: 30px 100px
+  +MQ(XXL)
+    .headline
+      padding: 30px 140px 30px 140px
+
+.intro_illustrations
+  position: relative
+  width: 100%
+  overflow: hidden
+  z-index: 10
+  padding-bottom: 3.2rem
+
+  +MQ(M)
+    padding-bottom: 0
+
+  +MQ(XL)
+    height: 616px
+
+  +MQ(XXL)
+    height: 874px
+
+.illustration-1
+  width: 100%
+  height: auto
+  z-index: 1
+  +MQ(XL)
+    position: absolute
+    +center(x)
+    bottom: 0
+    width: 946px
+  +MQ(XXL)
+    width: 1344px
+
+.illustration-2, .illustration-3, .illustration-4, .illustration-5
+  display: none
+  +MQ(XL)
+    display: block
+
+.illustration-2
+  position: absolute
+  left: 66px
+  top: 200px
+  width: 516px
+  height: 290px
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2)
+
+  +MQ(XL)
+    left: 48px
+    top: 140px
+    width: 360px
+    height: 202px
+
+  +MQ(XXL)
+    left: 66px
+    top: 200px
+    width: 516px
+    height: 290px
+
+.illustration-3
+  position: absolute
+  left: 118px
+  top: 414px
+  width: 300px
+  height: 225px
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2)
+
+  +MQ(XL)
+    left: 86px
+    top: 290px
+    width: 208px
+    height: 156px
+
+  +MQ(XXL)
+    left: 118px
+    top: 414px
+    width: 300px
+    height: 225px
+
+.illustration-4
+  position: absolute
+  right: 60px
+  top: 240px
+  width: 516px
+  height: 290px
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -7px rgba(0,0,0,0.2)
+
+  +MQ(XL)
+    right: 50px
+    top: 170px
+    width: 360px
+    height: 202px
+
+  +MQ(XXL)
+    width: 516px
+    height: 290px
+
+.illustration-5
+  position: absolute
+  right: -120px
+  top: 420px
+  width: 516px
+  height: 290px
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2)
+
+  +MQ(XL)
+    right: -80px
+    top: 280px
+    width: 360px
+    height: 202px
+
+  +MQ(XXL)
+    right: -120px
+    top: 400px
+    width: 516px
+    height: 290px
+/* ------------------------------------------------*/
+/* Intro Styles End
+/* ------------------------------------------------*/

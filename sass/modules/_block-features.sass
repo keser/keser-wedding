@@ -1,0 +1,85 @@
+// ------------------------------------------------
+// Features Styles Start
+// ------------------------------------------------
+
+.features
+  position: relative
+
+  &.features-scroll
+    .feature-item
+      background-color: #fafafa
+
+  .feature-item
+    position: relative
+    height: auto
+    text-align: center
+    padding: 7.2rem 10%
+
+  .feature-item_description
+    width: 100%
+    p
+      margin: 0 auto
+      max-width: 360px
+
+  .feature-image
+    height: 300px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+  +MQ(M)
+    .feature-item
+      height: 360px
+      padding: 0
+    .feature-item_description
+      position: absolute
+      +center(y)
+      padding: 0 7.2rem
+    .feature-image
+      height: 360px
+    &.features-scroll
+      .feature-item
+        height: auto
+        padding: 7.2rem 10%
+      .feature-item_description
+        position: relative
+        top: auto
+        transform: translateY(0)
+        padding: 0 7.2rem
+      .feature-image
+        height: 300px
+
+  +MQ(L)
+    .feature-item
+      padding: 0
+
+    &.features-scroll
+      .feature-item
+        height: 360px
+        padding: 0
+      .feature-item_description
+        position: absolute
+        +center(y)
+        padding: 0 7.2rem
+      .feature-image
+        height: 360px
+
+  +MQ(XL)
+    .feature-item
+      height: 50vh
+      padding: 0
+
+    .feature-item_description
+      position: absolute
+      +center(y)
+
+    .feature-image
+      height: 50vh
+
+    &.features-scroll
+      .feature-item,
+      .feature-image
+        height: 50vh
+// ------------------------------------------------
+// Features Styles End
+// ------------------------------------------------

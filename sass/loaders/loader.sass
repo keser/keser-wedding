@@ -1,0 +1,159 @@
+/*! ------------------------------------------------
+   Project Name: Mixio Coming Soon Template
+   Project Description: Mixio - awesome coming soon template to kick-start your project
+   Tags: mixio, coming soon, under construction, template, coming soon page, html5, css3
+   Version: 1.0.0
+   Build Date: July 2018
+   Last Update: July 2018
+   This product is available exclusively on Themeforest
+   Author: mix_design
+   Author URI: http://mixdesign.club
+   File name: loader.css
+   ------------------------------------------------
+
+   ------------------------------------------------
+   Table of Contents
+   ------------------------------------------------
+    1. Loader Styles
+   ------------------------------------------------
+   Table of Contents End
+   ------------------------------------------------ */
+
+// Import Bourbon
+@import "bourbon"
+
+// Import Mixins and Common Variables
+@import "../partials/layout"
+@import "../partials/mixins"
+@import "../partials/variables"
+
+/* ------------------------------------------------*/
+/* Loader Styles Start
+/* ------------------------------------------------*/
+.loader
+  +position(fixed, 0 0 0 0)
+  z-index: 10000
+  background-color: shade($bsc-grey-dark, 40%)
+  opacity: 1
+  visibility: visible
+  transition: visibility .4s .0s, opacity .4s, background-color .6s ease-in-out
+
+  &.fade-dark
+    background-color: shade($bsc-grey-dark, 60%)
+
+  .loader-content
+    position: absolute
+    +center
+
+    .loader-logo
+      display: block
+      width: 6rem
+      height: 6rem
+      margin: 0 auto 2.4rem
+
+      img
+        display: block
+        width: 100%
+        height: auto
+
+    .loader-caption
+      margin: 0 auto
+      text-align: center
+
+      .loading-text
+        display: block
+        color: rgba(255,255,255,.6)
+        text-transform: uppercase
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 1.4rem
+        letter-spacing: .2rem
+
+      .loading-dots
+        position: relative
+        display: inline-block
+        text-align: center
+        +clearfix
+
+        .dot
+          float: left
+          width: .4rem
+          height: .4rem
+          margin: 0 0.4rem
+          background: #FFFFFF
+          opacity: 0
+          animation: fade 1s infinite
+          &:nth-of-type(1)
+            animation-delay: 0s
+          &:nth-of-type(2)
+            animation-delay: .1s
+          &:nth-of-type(3)
+            animation-delay: .2s
+
+  &.loaded
+    opacity: 0
+    visibility: hidden
+
+@keyframes fade
+  0%
+    opacity: 0
+  50%
+    opacity: 0.8
+  100%
+    opacity: 0
+
+@keyframes slideInDown
+  from
+    transform: translate3d(0, -50px, 0)
+    opacity: 0
+    visibility: visible
+  to
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+
+.slideInDown
+  animation-iteration-count: 1
+  animation-name: slideInDown
+  animation-duration: .6s
+  animation-fill-mode: both
+
+@keyframes slideInUp
+  from
+    transform: translate3d(0, 50px, 0)
+    opacity: 0
+    visibility: visible
+  to
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+
+.slideInUp
+  animation-name: slideInUp
+  animation-iteration-count: 1
+  animation-duration: .6s
+  animation-fill-mode: both
+
+@keyframes flipOutY
+  from
+    transform: perspective(400px)
+  to
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg)
+    opacity: 0
+
+.flipOutY
+  backface-visibility: visible
+  animation-name: flipOutY
+  animation-duration: .6s
+  animation-fill-mode: both
+
+@keyframes fadeOutDown
+  from
+    opacity: 1
+  to
+    opacity: 0
+    transform: translate3d(0, 50px, 0)
+
+.fadeOutDown
+  animation: fadeOutDown .6s 1
+  animation-fill-mode: both
+/* ------------------------------------------------*/
+/* Loader Styles End
+/* ------------------------------------------------*/
