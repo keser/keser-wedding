@@ -29,8 +29,8 @@
 
 $(function() {
   // Insert Your Google Maps Parameters
-  var latitude = 40.761425,
-    longitude = -73.977643,
+  var latitude = 40.7093,
+    longitude = -74.0400,
     map_zoom = 14;
 
   // Google Map Custom Marker Icon
