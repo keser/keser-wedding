@@ -15,18 +15,18 @@
   "author": "mix_design",
   "license": "ISC",
   "devDependencies": {
-    "bower": "^1.8.2",
-    "browser-sync": "^2.23.6",
+    "bower": "^1.8.8",
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-cache": "^1.0.2",
+    "gulp-cache": "^1.1.3",
     "gulp-clean-css": "^3.9.2",
     "gulp-concat": "^2.6.1",
-    "gulp-cssbeautify": "^1.0.0",
+    "gulp-cssbeautify": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "node-bourbon": "^4.2.8"
   }
 }
